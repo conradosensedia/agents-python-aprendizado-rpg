@@ -1,0 +1,52 @@
+[
+  {
+    "id": "historia_01",
+    "titulo": "A Fundação do Império",
+    "texto": "O Império de Valdris foi fundado há 400 anos pelo Rei Aldomar, o Unificador. Ele reuniu os cinco clãs das planícies após a Grande Fome e ergueu a capital Cindra às margens do Rio Prata. Seu símbolo era um corvo dourado sobre campo azul."
+  },
+  {
+    "id": "historia_02",
+    "titulo": "A Queda do Rei Legítimo",
+    "texto": "Há 12 anos, o Rei Edran foi assassinado durante o Banquete das Estrelas por envenenamento. Nunca se provou quem ordenou o crime. O trono ficou vazio por três dias até Lord Kael assumir o poder à força, alegando ser o único capaz de evitar a guerra civil."
+  },
+  {
+    "id": "historia_03",
+    "titulo": "Lord Kael, o Usurpador",
+    "texto": "Lord Kael governa Valdris com mão de ferro há 12 anos. Usa uma armadura negra e raramente mostra o rosto. Dizem que fez um pacto com entidades do plano das sombras em troca de longevidade. Seus soldados, os Guardas de Cinza, vestem uniformes negros e não falam."
+  },
+  {
+    "id": "historia_04",
+    "titulo": "O Castelo de Valdris",
+    "texto": "O Castelo de Valdris fica no centro da capital Cindra, sobre uma rocha negra chamada Dente do Corvo. Tem sete torres, sendo a central a mais alta. A torre central é onde Kael reside e ninguém entra sem ser chamado. As muralhas têm 20 metros de altura e são patrulhadas dia e noite."
+  },
+  {
+    "id": "historia_05",
+    "titulo": "A Resistência",
+    "texto": "Um grupo chamado Chama do Corvo opera nas sombras contra o regime de Kael. Seus membros usam um pin dourado em forma de corvo como sinal de reconhecimento. A líder, conhecida apenas como A Voz, envia ordens por cartas cifradas. Acredita-se que ela seja nobre de sangue real."
+  },
+  {
+    "id": "historia_06",
+    "titulo": "A Vila de Cinzas",
+    "texto": "A Vila de Cinzas fica a três dias a pé da capital. Foi próspera no passado mas foi saqueada pelos Guardas de Cinza há 5 anos quando os moradores se recusaram a pagar um novo imposto de Kael. Metade dos moradores partiu. Os que ficaram vivem com medo e desconfiança de estranhos."
+  },
+  {
+    "id": "historia_07",
+    "titulo": "A Taverna do Corvo Manco",
+    "texto": "A única taverna que restou na Vila de Cinzas chama-se Corvo Manco. É gerenciada por Brenna, uma mulher de meia-idade com cicatriz no rosto. Brenna sabe de tudo que acontece na vila mas finge não saber de nada. Há rumores de que ela é membro da Chama do Corvo."
+  },
+  {
+    "id": "historia_08",
+    "titulo": "As Catacumbas sob a Vila",
+    "texto": "Sob a Vila de Cinzas existe uma rede de catacumbas da época da fundação do império. A entrada oficial foi selada pelos Guardas de Cinza. Os moradores mais velhos sabem de uma entrada secreta pela adega de uma casa abandonada na rua leste. As catacumbas guardam túmulos antigos e, dizem, uma passagem para a capital."
+  },
+  {
+    "id": "historia_09",
+    "titulo": "A Profecia do Corvo",
+    "texto": "Uma profecia antiga diz: 'Quando o corvo dourado cantar três vezes ao amanhecer, o sangue do rei verdadeiro acordará e o usurpador cairá em cinzas'. Estudiosos discutem o significado. Kael proibiu menção à profecia sob pena de prisão."
+  },
+  {
+    "id": "historia_10",
+    "titulo": "Os Guardas de Cinza",
+    "texto": "Os Guardas de Cinza são os soldados de elite de Kael. Não falam, não negociam e não mostram misericórdia. Usam elmos que cobrem o rosto inteiro. Rumores dizem que não são humanos — que Kael os criou por magia negra a partir de prisioneiros. Nenhum Guarda de Cinza jamais foi visto comer ou dormir."
+  }
+]

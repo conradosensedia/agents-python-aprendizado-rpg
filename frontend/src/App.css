@@ -1,0 +1,151 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f0e17;
+  color: #e8e6d9;
+  font-family: 'Georgia', serif;
+  min-height: 100vh;
+}
+
+.app { min-height: 100vh; }
+
+/* ── HOME ── */
+.home { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+
+.home-header { text-align: center; margin-bottom: 48px; }
+.home-header h1 { font-size: 2.4rem; color: #c9a84c; margin-bottom: 8px; }
+.home-header p  { color: #888; font-size: 1rem; }
+
+.secao { margin-bottom: 48px; }
+.secao h2 { font-size: 1.2rem; color: #c9a84c; border-bottom: 1px solid #2a2835; padding-bottom: 8px; margin-bottom: 16px; }
+.secao-desc { color: #888; margin-bottom: 16px; font-size: 0.9rem; }
+
+.sistemas-lista { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+.sistema-card {
+  flex: 1; min-width: 220px; background: #1a1826; border: 2px solid #2a2835;
+  border-radius: 8px; padding: 20px; cursor: pointer; transition: border-color .2s;
+}
+.sistema-card:hover { border-color: #c9a84c55; }
+.sistema-card.selecionado { border-color: #c9a84c; }
+.sistema-imagem { font-size: 2rem; display: block; margin-bottom: 8px; }
+.sistema-card h3 { color: #e8e6d9; margin-bottom: 6px; }
+.sistema-card p  { color: #777; font-size: 0.85rem; }
+
+.sessoes-lista { display: flex; flex-direction: column; gap: 10px; }
+.sessao-card {
+  background: #1a1826; border: 1px solid #2a2835; border-radius: 8px;
+  padding: 16px 20px; display: flex; align-items: center; gap: 16px;
+  cursor: pointer; transition: border-color .2s;
+}
+.sessao-card:hover { border-color: #c9a84c55; }
+.sessao-sistema { font-weight: bold; color: #c9a84c; min-width: 140px; }
+.sessao-info    { color: #888; font-size: 0.85rem; flex: 1; }
+.sessao-data    { color: #555; font-size: 0.8rem; }
+.btn-continuar  { background: transparent; border: 1px solid #c9a84c; color: #c9a84c; padding: 6px 14px; border-radius: 4px; cursor: pointer; }
+.btn-continuar:hover { background: #c9a84c22; }
+
+.btn-iniciar {
+  background: #c9a84c; color: #0f0e17; border: none;
+  padding: 12px 32px; border-radius: 6px; font-size: 1rem;
+  font-family: inherit; cursor: pointer; font-weight: bold;
+  transition: opacity .2s;
+}
+.btn-iniciar:disabled { opacity: .4; cursor: not-allowed; }
+
+/* ── ONBOARDING ── */
+.onboarding { max-width: 680px; margin: 0 auto; padding: 40px 20px; display: flex; flex-direction: column; height: 100vh; }
+.onboarding-header { margin-bottom: 24px; }
+.onboarding-header h2 { color: #c9a84c; }
+.onboarding-header p  { color: #888; font-size: 0.9rem; }
+
+/* ── GAME ── */
+.game { display: flex; height: 100vh; }
+
+.ficha {
+  width: 220px; min-width: 220px; background: #12111e; border-right: 1px solid #2a2835;
+  padding: 24px 16px; display: flex; flex-direction: column; gap: 12px; overflow-y: auto;
+}
+.ficha h3 { color: #c9a84c; font-size: 1.1rem; }
+.ficha-classe { color: #888; font-size: 0.8rem; margin-top: -8px; }
+
+.hp-barra { background: #2a2835; border-radius: 4px; height: 8px; flex: 1; overflow: hidden; }
+.hp-preenchido { background: #6db56d; height: 100%; transition: width .3s; }
+.ficha-hp { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+
+.ficha-atributos { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.atributo { background: #1a1826; border-radius: 4px; padding: 6px 8px; text-align: center; }
+.atributo-nome { display: block; font-size: 0.65rem; color: #888; text-transform: uppercase; }
+.atributo-valor { display: block; font-size: 1rem; color: #e8e6d9; font-weight: bold; }
+.atributo-mod { display: block; font-size: 0.7rem; color: #c9a84c; }
+
+.ficha-inventario h4 { color: #888; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 4px; }
+.ficha-inventario p  { font-size: 0.8rem; color: #aaa; }
+.ficha-inventario .vazio { color: #555; font-style: italic; }
+.ficha-ouro { font-size: 0.85rem; color: #c9a84c; }
+
+.btn-voltar { margin-top: auto; background: transparent; border: 1px solid #333; color: #666; padding: 8px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+.btn-voltar:hover { border-color: #555; color: #aaa; }
+
+.narrativa { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+/* ── CHAT COMPARTILHADO ── */
+.chat-container {
+  flex: 1; overflow-y: auto; padding: 24px 32px; display: flex; flex-direction: column; gap: 16px;
+}
+
+.mensagem.assistant .narrativa-texto {
+  color: #e8e6d9; line-height: 1.8; font-size: 1rem;
+  border-left: 3px solid #c9a84c44; padding-left: 16px;
+}
+.mensagem.user .acao-texto {
+  color: #888; font-size: 0.9rem; font-style: italic; text-align: right;
+}
+.cursor { animation: piscar .8s infinite; }
+@keyframes piscar { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+
+.mensagem.user      { align-self: flex-end; max-width: 70%; }
+.mensagem.assistant { align-self: flex-start; max-width: 90%; }
+
+.mensagem-role { font-size: 0.7rem; color: #555; text-transform: uppercase; display: block; margin-bottom: 4px; }
+
+.chat-input {
+  padding: 16px 24px; border-top: 1px solid #2a2835; display: flex; gap: 10px; background: #0f0e17;
+}
+.chat-input input {
+  flex: 1; background: #1a1826; border: 1px solid #2a2835; color: #e8e6d9;
+  padding: 10px 14px; border-radius: 6px; font-size: 0.95rem; font-family: inherit;
+  outline: none;
+}
+.chat-input input:focus { border-color: #c9a84c55; }
+.chat-input button {
+  background: #c9a84c; color: #0f0e17; border: none; padding: 10px 20px;
+  border-radius: 6px; cursor: pointer; font-weight: bold; font-family: inherit;
+  transition: opacity .2s;
+}
+.chat-input button:disabled { opacity: .4; cursor: not-allowed; }
+
+.digitando { color: #c9a84c; animation: piscar .8s infinite; }
+
+/* ── CARTA DE ROLAGEM ── */
+.rolagem {
+  display: flex; align-items: center; gap: 12px;
+  background: #1a1826; border: 1px solid #3a3550;
+  border-left: 4px solid #7c6fa0;
+  border-radius: 8px; padding: 10px 16px;
+  align-self: flex-start; max-width: 420px;
+  animation: surgir .2s ease;
+}
+.rolagem.critico      { border-left-color: #f0c040; background: #1f1c10; }
+.rolagem.falha-critica { border-left-color: #c04040; background: #1f1010; }
+
+@keyframes surgir { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+.rolagem-dado { font-size: 1.4rem; }
+.rolagem-corpo { display: flex; flex-direction: column; gap: 2px; }
+.rolagem-motivo { font-size: 0.75rem; color: #888; }
+.rolagem-numeros { display: flex; align-items: baseline; gap: 8px; }
+.rolagem-individuais { font-size: 0.85rem; color: #aaa; }
+.rolagem-mod  { font-size: 0.85rem; color: #c9a84c; }
+.rolagem-total { font-size: 1.4rem; font-weight: bold; color: #e8e6d9; }
+.rolagem-badge { font-size: 0.7rem; font-weight: bold; color: #f0c040; text-transform: uppercase; letter-spacing: .05em; }
+.rolagem-badge.falha { color: #c04040; }

@@ -1,0 +1,4 @@
+**/storage/**
+**/__pycache__/**
+**/__init__.py
+**/.env

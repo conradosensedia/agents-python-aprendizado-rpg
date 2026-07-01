@@ -1,0 +1,17 @@
+{
+  "id": "dnd5e",
+  "nome": "Dungeons & Dragons 5e",
+  "descricao": "O sistema de RPG mais popular do mundo. Fantasia épica com magia, combate e exploração.",
+  "imagem": "🐉",
+  "racas": ["Humano", "Elfo", "Anão", "Halfling", "Gnomo", "Meio-Elfo", "Meio-Orc", "Tiefling", "Draconato"],
+  "classes": ["Bárbaro", "Bardo", "Clérigo", "Druida", "Guerreiro", "Monge", "Paladino", "Ranger", "Ladino", "Feiticeiro", "Bruxo", "Mago"],
+  "backgrounds": ["Acólito", "Criminoso", "Herói do Povo", "Nobre", "Sábio", "Soldado", "Forasteiro", "Marinheiro"],
+  "atributos": ["Força", "Destreza", "Constituição", "Inteligência", "Sabedoria", "Carisma"],
+  "contexto_narrador": "Você é um Mestre de Dungeons & Dragons 5e experiente. Siga as regras do sistema: use testes de atributo (d20 + modificador vs CD), pontos de vida baseados na classe, magias por slots de magia. O mundo é de fantasia épica medieval com magia, masmorras, dragões e heróis. Narre com drama e permita que os jogadores resolvam situações de formas criativas.",
+  "contexto_onboarding": "Você é um assistente de criação de personagem para D&D 5e. Seu objetivo é guiar o jogador na criação do personagem de forma conversacional e divertida. Colete: nome, raça, classe, background e distribua os atributos (use o método de compra de pontos: 27 pontos, custo 1 por ponto até 13, custo 2 por ponto 14-15). Ao final, gere os HP iniciais com base na classe e Constituição. Seja amigável e explique brevemente o que cada escolha significa para o jogo.",
+  "hp_base_por_classe": {
+    "Bárbaro": 12, "Guerreiro": 10, "Paladino": 10, "Ranger": 10,
+    "Bardo": 8, "Clérigo": 8, "Druida": 8, "Monge": 8, "Ladino": 8, "Bruxo": 8,
+    "Feiticeiro": 6, "Mago": 6
+  }
+}
